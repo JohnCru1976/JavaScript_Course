@@ -5,6 +5,7 @@ the same value as these arguments.
 Note: You have to use the arguments object.
 */
 
+// PERSONAL SOLUTION
 function destroyer(arr, ...args) {
     let tempArray = [];
     args.forEach(elemArgs => {    
@@ -18,10 +19,6 @@ function destroyer(arr, ...args) {
     return arr;
   }
   
-  console.log(destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, 
-  "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", 
-  "hotdog", "grandma", "bugati", "trojan"));
-
   // SOLUTION 1
   function destroyer(arr) {
     let valsToRemove = Object.values(arguments).slice(1);
