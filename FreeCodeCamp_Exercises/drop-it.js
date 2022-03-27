@@ -43,4 +43,12 @@ function dropElements(arr, func) {
       ? (dropElements(arr.slice(i + 1), func, i))
       : arr;
   }
+
+  // SOLUTION 4 RECURSION WITH PERSONAL MODIFICATION (Without i=0 parameter)
+  function dropElements(arr, func) {
+    return arr.length > 0 && !func(arr[0])
+      ? (dropElements(arr.slice(1), func))
+      : arr;
+  }
   
+
