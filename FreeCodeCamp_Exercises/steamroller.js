@@ -3,6 +3,7 @@ Steamroller
 Flatten a nested array. You must account for varying levels of nesting.
 */
 
+<<<<<<< HEAD
 // PERSONAL SOLUTION
 let emptyArr = [];
 
@@ -34,3 +35,5 @@ function steamrollArray(arr) {
     });
     return flatArr;
   }
+=======
+>>>>>>> ea1917a845bb13087647cc0f5e6f12a2f054ec61
