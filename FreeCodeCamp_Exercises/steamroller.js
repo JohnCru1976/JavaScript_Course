@@ -14,6 +14,7 @@ function steamrollArray(arr) {
     steamrollArray(arr.slice(1));
   }else if(arr.length === 1){
     steamrollArray(arr[0]);
+    
   }
   return emptyArr;
 }
